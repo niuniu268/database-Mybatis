@@ -6,4 +6,18 @@
     <select id="selectBlog" resultType="org.example.pojo.Information">
         select * from information;
     </select>
+    <select id="searchAll" resultType="org.example.pojo.Information">
+
+        select * from information;
+
+
+    </select>
+    <select id="searchwithCondition" resultType="org.example.pojo.Information">
+        select * from information
+        <where>
+            or firstName like #{firstName}
+            or lastName like #{lastName}
+        </where>
+    </select>
 </mapper>
+
