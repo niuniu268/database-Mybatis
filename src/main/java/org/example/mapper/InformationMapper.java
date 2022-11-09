@@ -12,5 +12,11 @@ public interface InformationMapper {
 
     List<Information> searchwithCondition(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
+    void addInformation(Information info);
+
+    void deleteInfo (Information info);
+
+
+
 
 }
